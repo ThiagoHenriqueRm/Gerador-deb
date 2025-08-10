@@ -91,7 +91,7 @@ def CreatePATH(
     # Create file control
     ContentControl = f"""Package: {Package}
 Version: {Version}
-Section: {Section.lower()}
+Section: {Section}
 Priority: {Priority}
 Architecture: {Architecture}
 Maintainer: {Maintainer}
