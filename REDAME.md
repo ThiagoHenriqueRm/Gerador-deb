@@ -119,10 +119,11 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
 
 # Interface
 ## Tela inicial
-<img src="imgs/Screenshot_Normal.png">
+<div align="center"> <img src="imgs/Screenshot_Normal.png"> </div>
 
 ## Dados válidos
-<img src="imgs/Screenshot_Correct.png">
+<div align="center"> <img src="imgs/Screenshot_Correct.png"> </div>
+
 
 ## Erros:
 ### App Name:
@@ -131,8 +132,8 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if Package == "":
             return [False, "Error: Empty field!"]
 
-<img height="30px" src="imgs/Error_Name/Name_Error_0.png">
-<img height="30px" src="imgs/Error_Name/Name_Error_00.png">
+<div align="center"> <img src="imgs/Error_Name/Name_Error_0.png"> </div>
+<div align="center"> <img src="imgs/Error_Name/Name_Error_00.png"> </div>
   
 ---
 
@@ -141,8 +142,8 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if not Package[0].isalpha(): 
             return [False, f'Error: "{Package[0]}" cannot be the first character of the App Name!' ]
 
-<img height="30px" src="imgs/Error_Name/Name_Error_1.png">
-<img height="30px" src="imgs/Error_Name/Name_Error_01.png">
+<div align="center"> <img src="imgs/Error_Name/Name_Error_1.png"> </div>
+<div align="center"> <img src="imgs/Error_Name/Name_Error_01.png"> </div>
   
 ---
 
@@ -151,8 +152,8 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if len(Package) > 50:
             return [False, "Error: App Name is too long!"]
 
-<img height="30px" src="imgs/Error_Name/Name_Error_2.png">
-<img height="30px" src="imgs/Error_Name/Name_Error_02.png">
+<div align="center"> <img src="imgs/Error_Name/Name_Error_2.png"> </div>
+<div align="center"> <img src="imgs/Error_Name/Name_Error_02.png"> </div>
   
 ---
 
@@ -162,8 +163,8 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
             if (not i.isalpha()) and (not i.isdigit()) and (i not in ["-", "+", "."]): 
                 return [False, f'Error: "{i}" cannot be used in the App Name!']
 
-<img height="30px" src="imgs/Error_Name/Name_Error_3.png">
-<img height="30px" src="imgs/Error_Name/Name_Error_03.png">
+<div align="center"> <img src="imgs/Error_Name/Name_Error_3.png"> </div>
+<div align="center"> <img src="imgs/Error_Name/Name_Error_03.png"> </div>
   
 
 ### Mantainer:
@@ -172,8 +173,8 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if Maintainer == "":
             return [False, "Error: Empty field!"]
 
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_0.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_00.png">
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_0.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_00.png"> </div>
   
 ---
 
@@ -182,11 +183,12 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if len(Maintainer.split()) != 3:
             return [False, "Error: Invalid format! : First_name Last_name <email@dominio.com>"]
 
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_1_1.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_1_2.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_1_3.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_1_4.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_01.png">
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_1_1.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_1_2.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_1_3.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_1_4.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_01.png"> </div>
+
   
 ---
 
@@ -195,10 +197,11 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if Gmail[0] != "<" or Gmail[-1] != ">":
             return [False, 'Error: Email must be inside "<" and ">" : "<email>"']
 
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_2_1.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_2_2.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_2_3.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_02.png">
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_2_1.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_2_2.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_2_3.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_02.png"> </div>
+
   
 ---
 
@@ -209,11 +212,12 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if not VerGmail: 
             return [False, f'Error: Invalid email!']
 
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_3_1.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_3_2.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_3_3.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_3_4.png">
-<img height="30px" src="imgs/Error_Mantainer/Maintainer_Error_03.png">
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_3_1.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_3_2.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_3_3.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_3_4.png"> </div>
+<div align="center"> <img src="imgs/Error_Mantainer/Maintainer_Error_03.png"> </div>
+
   
 
 ### Version:
@@ -222,8 +226,8 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if Version == "":
             return [False, "Error: Empty field!"]
 
-<img height="30px" src="imgs/Error_Version/Version_Error_0.png">
-<img height="30px" src="imgs/Error_Version/Version_Error_00.png">
+<div align="center"> <img src="imgs/Error_Version/Version_Error_0.png"> </div>
+<div align="center"> <img src="imgs/Error_Version/Version_Error_00.png"> </div>
   
 ---
 
@@ -232,8 +236,9 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
         if not Version[0].isdigit():
             return [False, 'Error: The "Version" must start with a number!']
 
-<img height="30px" src="imgs/Error_Version/Version_Error_1.png">
-<img height="30px" src="imgs/Error_Version/Version_Error_01.png">
+<div align="center"> <img src="imgs/Error_Version/Version_Error_1.png"> </div>
+<div align="center"> <img src="imgs/Error_Version/Version_Error_01.png"> </div>
+
 
 ---  
   
@@ -243,8 +248,9 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
             if (not i.isalpha()) and (not i.isdigit() and (i not in [".", "+", "~", "-"])):
                 return [False, f'Error: "{i}" cannot be used in the Version!']
 
-<img height="30px" src="imgs/Error_Version/Version_Error_2.png">
-<img height="30px" src="imgs/Error_Version/Version_Error_02.png">
+<div align="center"> <img src="imgs/Error_Version/Version_Error_2.png"> </div>
+<div align="center"> <img src="imgs/Error_Version/Version_Error_02.png"> </div>
+
   
 ---
   
@@ -255,9 +261,9 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
             if accent: 
                 return [False, f'Error: "{i}" cannot be used in the Version!']
 
-<img height="30px" src="imgs/Error_Version/Version_Error_3.png">
-<img height="30px" src="imgs/Error_Version/Version_Error_03.png">
-  
+<div align="center"> <img src="imgs/Error_Version/Version_Error_3.png"> </div>
+<div align="center"> <img src="imgs/Error_Version/Version_Error_03.png"> </div>
+
 
 > ! Os possiveis erros dos campos "Icon, Exec e Descriptioin" ainda não estão completos
 
