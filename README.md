@@ -90,7 +90,7 @@ Ideal para desenvolvedores que querem gerar rapidamente pacotes Debian sem preci
     Comment={Description}
     Terminal={Terminal}
     """
-        DirDesktop = os.path.join(DIR, FilePathName, "usr", "share", "applications", "app.desktop")
+        DirDesktop = os.path.join(DIR, FilePathName, "usr", "share", "applications", f"{Package}.desktop")
         with open(DirDesktop, "w") as f:
             f.write(ContentDesktop)
 
